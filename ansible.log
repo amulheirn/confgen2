@@ -1,0 +1,25 @@
+2016-11-23 10:30:33,568 p=6380 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2016-11-23 10:30:33,609 p=6380 u=amulheirn |  TASK [setup] *******************************************************************
+2016-11-23 10:30:54,371 p=6380 u=amulheirn |  ok: [localhost]
+2016-11-23 10:30:54,381 p=6380 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2016-11-23 10:30:54,991 p=6380 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2016-11-23 10:30:55,357 p=6380 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2016-11-23 10:30:55,711 p=6380 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2016-11-23 10:30:56,083 p=6380 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2016-11-23 10:30:56,094 p=6380 u=amulheirn |  PLAY RECAP *********************************************************************
+2016-11-23 10:30:56,094 p=6380 u=amulheirn |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2016-11-29 10:08:14,912 p=4374 u=amulheirn |  localhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh.", 
+    "unreachable": true
+}
+2016-11-29 10:13:36,696 p=4420 u=amulheirn |  localhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "[Errno None] Unable to connect to port 22 on 127.0.0.1 or ::1", 
+    "unreachable": true
+}
+2016-11-29 10:13:42,784 p=4436 u=amulheirn |  localhost | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "[Errno None] Unable to connect to port 22 on 127.0.0.1 or ::1", 
+    "unreachable": true
+}

@@ -1,0 +1,6 @@
+---
+srx_configs:
+  - { hostname: srx1, wan_if_description: SRX1WAN, wan_if_address: 10.1.1.1, wan_if_mask: 30 }
+  - { hostname: srx2, wan_if_description: SRX2WAN, wan_if_address: 10.1.1.5, wan_if_mask: 30 }
+  - { hostname: srx3, wan_if_description: SRX3WAN, wan_if_address: 10.1.1.9, wan_if_mask: 30 }
+  - { hostname: someothersrx, wan_if_description: someothersrx WAN, wan_if_address: 10.1.1.13, wan_if_mask: 30 }

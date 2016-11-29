@@ -1,0 +1,8 @@
+---
+- name: Generate configs from templates
+  hosts: localhost
+  connection: local
+
+  roles:
+   - confgen2
+

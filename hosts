@@ -1,0 +1,8 @@
+[all:vars]
+logdir=./roles/confgen/logs
+confdir=./roles/confgen/configs
+templatedir=./roles/confgen/templates
+datadir=./roles/confgen/data
+
+[local]
+localhost ansible_ssh_user=andrew
