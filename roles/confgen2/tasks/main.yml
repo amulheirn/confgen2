@@ -1,6 +1,6 @@
 ---
 - name: Generate config files
-  template: src=srx-template.j2 dest=/Users/amulheirn/Documents/ansible/roles/confgen2/configs/{{item.hostname}}.cfg
+  template: src=srx-template.j2 dest=/Users/amulheirn/Documents/ansible/confgen/roles/confgen2/configs/{{item.hostname}}.cfg
 
   with_items: "{{ srx_configs }}"
 

@@ -23,3 +23,88 @@
     "msg": "[Errno None] Unable to connect to port 22 on 127.0.0.1 or ::1", 
     "unreachable": true
 }
+2016-11-30 12:40:19,605 p=10035 u=amulheirn |  ERROR! the playbook: all could not be found
+2016-11-30 12:40:46,866 p=10039 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2016-11-30 12:40:47,171 p=10039 u=amulheirn |  TASK [setup] *******************************************************************
+2016-11-30 12:41:08,066 p=10039 u=amulheirn |  ok: [localhost]
+2016-11-30 12:41:08,089 p=10039 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2016-11-30 12:41:08,905 p=10039 u=amulheirn |  failed: [localhost] (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'}) => {"changed": true, "failed": true, "item": {"hostname": "srx1", "wan_if_address": "10.1.1.1", "wan_if_description": "SRX1WAN", "wan_if_mask": 30}, "msg": "Destination directory /Users/amulheirn/Documents/ansible/roles/confgen2/configs does not exist"}
+2016-11-30 12:41:09,292 p=10039 u=amulheirn |  failed: [localhost] (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'}) => {"changed": true, "failed": true, "item": {"hostname": "srx2", "wan_if_address": "10.1.1.5", "wan_if_description": "SRX2WAN", "wan_if_mask": 30}, "msg": "Destination directory /Users/amulheirn/Documents/ansible/roles/confgen2/configs does not exist"}
+2016-11-30 12:41:09,676 p=10039 u=amulheirn |  failed: [localhost] (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'}) => {"changed": true, "failed": true, "item": {"hostname": "srx3", "wan_if_address": "10.1.1.9", "wan_if_description": "SRX3WAN", "wan_if_mask": 30}, "msg": "Destination directory /Users/amulheirn/Documents/ansible/roles/confgen2/configs does not exist"}
+2016-11-30 12:41:10,059 p=10039 u=amulheirn |  failed: [localhost] (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'}) => {"changed": true, "failed": true, "item": {"hostname": "someothersrx", "wan_if_address": "10.1.1.13", "wan_if_description": "someothersrx WAN", "wan_if_mask": 30}, "msg": "Destination directory /Users/amulheirn/Documents/ansible/roles/confgen2/configs does not exist"}
+2016-11-30 12:41:10,066 p=10039 u=amulheirn |  NO MORE HOSTS LEFT *************************************************************
+2016-11-30 12:41:10,067 p=10039 u=amulheirn |  	to retry, use: --limit @/Users/amulheirn/Documents/ansible/confgen/confgen2.retry
+
+2016-11-30 12:41:10,067 p=10039 u=amulheirn |  PLAY RECAP *********************************************************************
+2016-11-30 12:41:10,067 p=10039 u=amulheirn |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2016-11-30 12:42:48,590 p=10197 u=amulheirn |  ERROR! the playbook: confgen2 could not be found
+2016-11-30 12:42:57,733 p=10201 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2016-11-30 12:42:57,780 p=10201 u=amulheirn |  TASK [setup] *******************************************************************
+2016-11-30 12:43:18,540 p=10201 u=amulheirn |  ok: [localhost]
+2016-11-30 12:43:18,552 p=10201 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2016-11-30 12:43:19,170 p=10201 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2016-11-30 12:43:19,557 p=10201 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2016-11-30 12:43:19,946 p=10201 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2016-11-30 12:43:20,338 p=10201 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2016-11-30 12:43:20,346 p=10201 u=amulheirn |  PLAY RECAP *********************************************************************
+2016-11-30 12:43:20,346 p=10201 u=amulheirn |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-03 10:57:38,439 p=56185 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2017-01-03 10:57:38,483 p=56185 u=amulheirn |  TASK [setup] *******************************************************************
+2017-01-03 10:57:59,269 p=56185 u=amulheirn |  ok: [localhost]
+2017-01-03 10:57:59,292 p=56185 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2017-01-03 10:57:59,879 p=56185 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2017-01-03 10:58:00,235 p=56185 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2017-01-03 10:58:00,589 p=56185 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2017-01-03 10:58:00,945 p=56185 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2017-01-03 10:58:00,954 p=56185 u=amulheirn |  PLAY RECAP *********************************************************************
+2017-01-03 10:58:00,954 p=56185 u=amulheirn |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-03 11:00:38,253 p=56369 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2017-01-03 11:00:38,289 p=56369 u=amulheirn |  TASK [setup] *******************************************************************
+2017-01-03 11:00:59,011 p=56369 u=amulheirn |  ok: [localhost]
+2017-01-03 11:00:59,022 p=56369 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2017-01-03 11:00:59,581 p=56369 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2017-01-03 11:00:59,917 p=56369 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2017-01-03 11:01:00,252 p=56369 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2017-01-03 11:01:00,668 p=56369 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2017-01-03 11:01:00,677 p=56369 u=amulheirn |  PLAY RECAP *********************************************************************
+2017-01-03 11:01:00,677 p=56369 u=amulheirn |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-03 11:01:35,091 p=56518 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2017-01-03 11:01:35,132 p=56518 u=amulheirn |  TASK [setup] *******************************************************************
+2017-01-03 11:01:55,930 p=56518 u=amulheirn |  ok: [localhost]
+2017-01-03 11:01:55,942 p=56518 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2017-01-03 11:01:56,489 p=56518 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2017-01-03 11:01:56,829 p=56518 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2017-01-03 11:01:57,164 p=56518 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2017-01-03 11:01:57,505 p=56518 u=amulheirn |  ok: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2017-01-03 11:01:57,516 p=56518 u=amulheirn |  PLAY RECAP *********************************************************************
+2017-01-03 11:01:57,516 p=56518 u=amulheirn |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2017-01-04 17:24:06,610 p=13451 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2017-01-04 17:24:06,892 p=13451 u=amulheirn |  TASK [setup] *******************************************************************
+2017-01-04 17:24:27,747 p=13451 u=amulheirn |  ok: [localhost]
+2017-01-04 17:24:27,777 p=13451 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2017-01-04 17:24:28,595 p=13451 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2017-01-04 17:24:28,937 p=13451 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2017-01-04 17:24:29,266 p=13451 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2017-01-04 17:24:29,592 p=13451 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2017-01-04 17:24:29,602 p=13451 u=amulheirn |  PLAY RECAP *********************************************************************
+2017-01-04 17:24:29,602 p=13451 u=amulheirn |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-05 08:26:44,668 p=19953 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2017-01-05 08:26:44,944 p=19953 u=amulheirn |  TASK [setup] *******************************************************************
+2017-01-05 08:27:05,817 p=19953 u=amulheirn |  ok: [localhost]
+2017-01-05 08:27:05,841 p=19953 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2017-01-05 08:27:06,625 p=19953 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2017-01-05 08:27:06,942 p=19953 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2017-01-05 08:27:07,269 p=19953 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2017-01-05 08:27:07,597 p=19953 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2017-01-05 08:27:07,608 p=19953 u=amulheirn |  PLAY RECAP *********************************************************************
+2017-01-05 08:27:07,608 p=19953 u=amulheirn |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
+2017-01-05 10:45:53,265 p=20944 u=amulheirn |  PLAY [Generate configs from templates] *****************************************
+2017-01-05 10:45:53,538 p=20944 u=amulheirn |  TASK [setup] *******************************************************************
+2017-01-05 10:46:14,429 p=20944 u=amulheirn |  ok: [localhost]
+2017-01-05 10:46:14,456 p=20944 u=amulheirn |  TASK [confgen2 : Generate config files] ****************************************
+2017-01-05 10:46:15,253 p=20944 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX1WAN', u'hostname': u'srx1', u'wan_if_address': u'10.1.1.1'})
+2017-01-05 10:46:15,577 p=20944 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX2WAN', u'hostname': u'srx2', u'wan_if_address': u'10.1.1.5'})
+2017-01-05 10:46:15,904 p=20944 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'SRX3WAN', u'hostname': u'srx3', u'wan_if_address': u'10.1.1.9'})
+2017-01-05 10:46:16,231 p=20944 u=amulheirn |  changed: [localhost] => (item={u'wan_if_mask': 30, u'wan_if_description': u'someothersrx WAN', u'hostname': u'someothersrx', u'wan_if_address': u'10.1.1.13'})
+2017-01-05 10:46:16,240 p=20944 u=amulheirn |  PLAY RECAP *********************************************************************
+2017-01-05 10:46:16,241 p=20944 u=amulheirn |  localhost                  : ok=2    changed=1    unreachable=0    failed=0   
