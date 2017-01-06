@@ -1,10 +1,17 @@
-**Overview**
-This is an ansible playbook for creating config files from templates.
+## Overview
+This is an ansible playbook for creating config files from templates.  
 
+Currently this playbook creates four (abbreviated) Juniper Network SRX config files, but given a different template, could create anything.
+
+## Usage
+First, delete the four config files in roles/confgen2/configs - these will be re-created when you run the playbook.
 Type 'ansible-playbook confgen2.yml' to run the playbook
+See the four files re-appear
 
+## Other info
+The template is a Jinja2 formatted file:
+`confgen/roles/confgen2/templates/srx-template.j2`
 
-The template is a Jinja2 formatted file under confgen/roles/confgen2/templates
 The variables are in confgen/roles/confgen2/vars/main.yml
 
 To modify this for your own purposes, do this:
