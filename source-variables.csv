@@ -1,0 +1,4 @@
+hostname,loopback,ge000_addr,ge000_mask,ge000_descr,ge001_addr,ge001_mask,ge001_descr,bgp_neigh,bgp_asn,bgp_remote_asn
+r1,1.1.1.1,192.168.1.1,30,WAN,172.16.1.254,24,LAN-site1,192.168.1.2,65001,65000
+r2,2.2.2.2,192.168.2.1,30,WAN,172.16.2.254,24,LAN-site2,192.168.2.2,65002,65000
+r3,3.3.3.3,192.168.3.1,30,WAN,172.16.3.254,24,LAN-site3,192.168.3.2,65003,65000
