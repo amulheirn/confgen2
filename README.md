@@ -1,7 +1,11 @@
 # Overview
-This project is a way of creating lots of config files from a Jinja2 template.
+This project is a way of creating lots of config files from a Jinja2 template using a python script and an Ansible playbook.  The process is:
 
-Once a template is created, variables are gathered for the devices in an Excel spreadsheet. This is turned into  YAML by a python script.  Once that is complete, the Ansible playbook reads the variables and the template, and produces config files.
+
+1. Write template with variables in place of IP addresses (for example)
+2. Gather variable values for the devices in an Excel spreadsheet
+3. Turn this into  YAML using a python script
+4. Run the Ansible playbook to read the variables and the template, and produce config files.
 
 Currently it creates three (abbreviated) Juniper Network router config files, but given a different template could create anything.
 
