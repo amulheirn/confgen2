@@ -77,8 +77,8 @@ The variables are in `roles/confgen2/vars/main.yml`
 
 Hopefully the python script will be sufficient for your needs, run with the
 "-h" argument for help:
-`
-    $ python csv2yaml.py -h
+
+    `$ python csv2yaml.py -h
     usage: csv2yaml.py [-h] [-o [outFile]] [-i [inFile [inFile ...]]] [-debug]
 
     Takes one or more CSV files, each containing device parameters, and turns them
@@ -92,8 +92,7 @@ Hopefully the python script will be sufficient for your needs, run with the
       -debug                Enable Debug Mode
 
     This software is provided with no warranty. Based on work by Andrew Mulheirn.
-    https://github.com/amulheirn/confgen2
-`
+    https://github.com/amulheirn/confgen2`
 
 This file will convert each csv file provided as input to a YAML dictionary,
 with each dictionary getting its name from the originating csv filename.
