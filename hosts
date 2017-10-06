@@ -1,8 +1,9 @@
 [all:vars]
 logdir=./roles/confgen/logs
-confdir=./roles/confgen/configs
+confdir=/home/dkerse/ansible/confgen2/roles/confgen2/configs
 templatedir=./roles/confgen/templates
 datadir=./roles/confgen/data
+ansible_python_interpreter='/usr/bin/env python'
 
 [local]
-localhost ansible_ssh_user=andrew
+localhost ansible_ssh_user=dkerse
