@@ -1,0 +1,5 @@
+hostname,wan_if_description,wan_if_address,wan_if_mask
+srx1,SRX1WAN,10.1.1.1,30
+srx2,SRX2WAN,10.1.1.5,30
+srx3,SRX3WAN,10.1.1.9,30
+someothersrx,someothersrx WAN,10.1.1.13,30

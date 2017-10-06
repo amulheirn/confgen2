@@ -1,6 +1,10 @@
 ---
-srx_configs:
-  - { hostname: srx1, wan_if_description: SRX1WAN, wan_if_address: 10.1.1.1, wan_if_mask: 30 }
-  - { hostname: srx2, wan_if_description: SRX2WAN, wan_if_address: 10.1.1.5, wan_if_mask: 30 }
-  - { hostname: srx3, wan_if_description: SRX3WAN, wan_if_address: 10.1.1.9, wan_if_mask: 30 }
-  - { hostname: someothersrx, wan_if_description: someothersrx WAN, wan_if_address: 10.1.1.13, wan_if_mask: 30 }
+router_variables:
+  - { ge000_descr: WAN, ge000_addr: 192.168.1.1, ge001_mask: 24, ge000_mask: 30, hostname: r1, ge001_descr: LAN-site1, loopback: 1.1.1.1, ge001_addr: 172.16.1.254, bgp_remote_asn: 65000, bgp_asn: 65001, bgp_neigh: 192.168.1.2, }
+  - { ge000_descr: WAN, ge000_addr: 192.168.2.1, ge001_mask: 24, ge000_mask: 30, hostname: r2, ge001_descr: LAN-site2, loopback: 2.2.2.2, ge001_addr: 172.16.2.254, bgp_remote_asn: 65000, bgp_asn: 65002, bgp_neigh: 192.168.2.2, }
+  - { ge000_descr: WAN, ge000_addr: 192.168.3.1, ge001_mask: 24, ge000_mask: 30, hostname: r3, ge001_descr: LAN-site3, loopback: 3.3.3.3, ge001_addr: 172.16.3.254, bgp_remote_asn: 65000, bgp_asn: 65003, bgp_neigh: 192.168.3.2, }
+srx_variables:
+  - { wan_if_mask: 30, wan_if_description: SRX1WAN, hostname: srx1, wan_if_address: 10.1.1.1, }
+  - { wan_if_mask: 30, wan_if_description: SRX2WAN, hostname: srx2, wan_if_address: 10.1.1.5, }
+  - { wan_if_mask: 30, wan_if_description: SRX3WAN, hostname: srx3, wan_if_address: 10.1.1.9, }
+  - { wan_if_mask: 30, wan_if_description: someothersrx WAN, hostname: someothersrx, wan_if_address: 10.1.1.13, }

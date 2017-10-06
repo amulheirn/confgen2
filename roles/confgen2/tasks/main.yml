@@ -1,6 +1,9 @@
 ---
-- name: Generate config files
-  template: src=srx-template.j2 dest=/Users/amulheirn/Documents/ansible/confgen/roles/confgen2/configs/{{item.hostname}}.cfg
+- name: Generate router config files
+  template: src=router-template.j2 dest={{ confdir }}/routers/{{item.hostname}}.cfg
+  with_items: "{{ router_variables }}"
 
-  with_items: "{{ srx_configs }}"
+- name: Generate srx config files
+  template: src=srx-template.j2 dest={{ confdir }}/srx/{{item.hostname}}.cfg
+  with_items: "{{ srx_variables }}"
 
